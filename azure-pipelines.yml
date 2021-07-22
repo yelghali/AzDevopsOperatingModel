@@ -34,6 +34,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      gh repo create NEWTOTO585 -y  --private --template azure-synapse-devops
+      gh repo create eLTOTO -y  --private --template alipi
   displayName: 'Create Repo from Template'
 
