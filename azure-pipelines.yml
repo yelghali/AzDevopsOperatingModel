@@ -34,6 +34,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      gh repo create eLTOTO2 -y  --private --template azure-synapse-devops
+      gh repo create eLTOTO3 -y  --private --template azure-synapse-devops
   displayName: 'Create Repo from Template'
 
