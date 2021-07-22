@@ -33,7 +33,7 @@ steps:
     targetType: 'inline'
     script: |
       echo $(TOKEN) > token.txt
-      
+      gh auth login --with-token < token.txt
       gh auth status
   displayName: 'check Github Auth status'
 
