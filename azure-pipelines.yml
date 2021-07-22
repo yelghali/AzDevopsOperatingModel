@@ -26,4 +26,14 @@ steps:
       echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
       sudo apt update
       sudo apt install gh
+  displayName: 'Install Github CLI'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      echo $(TOKEN) > token.txt
+      
+      gh auth status
+  displayName: 'check Github Auth status'
 
